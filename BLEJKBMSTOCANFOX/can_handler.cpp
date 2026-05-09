@@ -17,10 +17,6 @@ static float lastValidVoltage = 72.0;    // Default voltage normal
 static bool firstDataReceived = false;   // Flag data pertama
 
 twai_message_t msg;
-
-// ================= TABEL LOOKUP SOC (AKURASI TINGGI) =================
-// Mapping dari raw value (yang diterima speedometer) ke persen
-// index = persen (0-100), value = raw yang harus dikirim
 const uint16_t percentToRaw[101] = {
   0, 60,70,80,90,95,105,115,125,135,140,150,160,170,180,185,195,205,215,225,
   230,240,250,260,270,275,285,295,305,315,320,330,340,350,360,365,375,385,395,405,
